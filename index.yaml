@@ -1,0 +1,37 @@
+apiVersion: v1
+entries:
+  helmqa:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2018-07-23T15:31:13.423699506+02:00
+    description: Quality assurance for Helm charts and chart repositories
+    digest: 9f1ed83a80077b4f395edcb44cf7c686c719f489ba4f93186acd1bda644afd2c
+    maintainers:
+    - email: mohammad10596@gmail.com
+      name: Mohammed Al-Ameen
+      url: https://github.com/mohammed-ali-1
+    name: helmqa
+    sources:
+    - https://github.com/serviceprototypinglab/helmqa
+    - https://hub.docker.com/r/jszhaw/helmqa/
+    urls:
+    - https://mohammed-ali-1.github.io/zhaw-charts/helmqa-0.1.0.tgz
+    version: 0.1.0
+  snafu:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2018-07-23T15:31:13.424079819+02:00
+    description: The Swiss Army Knife of Serverless Computing
+    digest: 417e7679b88e734f2af3510dc05fd6dc2cc0ea12361de77bc76ff509b846bac4
+    maintainers:
+    - email: mohammad10596@gmail.com
+      name: Mohammed Al-Ameen
+      url: https://github.com/mohammed-ali-1
+    name: snafu
+    sources:
+    - https://github.com/serviceprototypinglab/snafu
+    - https://hub.docker.com/r/jszhaw/snafu/
+    urls:
+    - https://mohammed-ali-1.github.io/zhaw-charts/snafu-0.1.0.tgz
+    version: 0.1.0
+generated: 2018-07-23T15:31:13.420205191+02:00
