@@ -1,0 +1,18 @@
+env:
+  global:
+    - REPO_DIR=/home/travis/build/zhaw-charts
+    - GH_URL=https://kubenow.github.io/helm-charts
+
+install:
+  - PATH=`pwd`/linux-amd64/:$PATH
+  - sudo apt-get install jq
+  - sudo apt-get install curl
+ 
+script:
+  # Check charts format
+  - >
+      status=`curl -X GET 'http://0.0.0.0:5000/livecheck?repo=https://github.com/appuio/charts.git' | jq .code`
+      if [ $status -eq 404 ]; then
+       travis_terminate 1
+      fi
+     done
