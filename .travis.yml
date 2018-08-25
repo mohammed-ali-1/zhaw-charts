@@ -1,3 +1,5 @@
+language: python
+
 env:
   global:
     - REPO_DIR=/home/travis/build/zhaw-charts
