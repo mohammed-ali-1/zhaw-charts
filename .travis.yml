@@ -5,6 +5,9 @@ env:
     - REPO_DIR=/home/travis/build/zhaw-charts
     - GH_URL=https://kubenow.github.io/helm-charts
 
+before-install:
+    - chmod +x test.sh
+
 install:
   - PATH=`pwd`/linux-amd64/:$PATH
   - sudo apt-get install jq
