@@ -10,10 +10,4 @@ install:
   - sudo apt-get install jq
   - sudo apt-get install curl
  
-script:
-  # Check charts format
-      status=`curl -X GET 'http://helmqa-helmqa.a3c1.starter-us-west-1.openshiftapps.com/livecheck?repo=https://github.com/appuio/charts.git' | jq .code`
-      if [ $status -eq 404 ]; then
-       travis_terminate 1
-      fi
-     done
+script: ./test.sh
